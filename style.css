@@ -1,0 +1,160 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  align-items: flex-end;
+  height: 10vh;
+}
+.header .col-div {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.header__div--title {
+  color: #EF4C00;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 28px;
+}
+.header__div--title__h1 {
+  position: relative;
+  bottom: -0.3em;
+}
+
+.header__div--links {
+  justify-content: space-between;
+}
+.header__div--links__span {
+  padding: 0 0 1px 25px;
+}
+
+.quote {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote__h3 {
+  font-size: 23px;
+  color: #EF4C00;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: -6em;
+  font-weight: bold;
+}
+.quote__h1 {
+  font-size: 35px;
+  color: #2E4765;
+}
+.quote__h1--quote-mark {
+  font-size: 70px;
+  margin: 25px;
+}
+.quote__h1--quote-mark:nth-child(4) {
+  position: relative;
+  margin-bottom: -1em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.image {
+  margin: 45px 0 45px 0;
+  position: relative;
+}
+.image__img {
+  border-radius: 30px;
+  width: 100%;
+}
+.image__h1 {
+  position: absolute;
+  color: #FFFFFF;
+  width: 25%;
+  height: 100%;
+  margin-top: -8em;
+  margin-left: 2em;
+}
+.image__div--logos {
+  position: absolute;
+  margin: -7em 0 0 5em;
+  width: 25%;
+  height: 25%;
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+.image__div--logos .apple-logo {
+  background-color: #af0000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 50%;
+}
+.image__div--logos .apple-logo__img {
+  max-width: 60%;
+  max-height: 60%;
+  margin: 10px;
+  border-radius: 50px;
+}
+.image__div--logos .apple-logo__small--1 {
+  font-size: 8px;
+}
+.image__div--logos .playstore-logo {
+  background-color: #f63939;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  border-radius: 5px;
+}
+.image__div--logos .playstore-logo__img {
+  max-width: 60%;
+  max-height: 60%;
+  margin: 10px;
+  border-radius: 50px;
+}
+.image__div--logos .playstore-logo__small--1 {
+  font-size: 8px;
+}
+
+.search .our-meals {
+  font-size: 23px;
+  font-weight: bold;
+  color: #B30733;
+  text-transform: uppercase;
+}
+.search__form {
+  display: flex;
+  position: relative;
+}
+.search__form .input--text {
+  width: 90%;
+  border-radius: 26px 0 0 26px;
+  background-color: #F4F9FF;
+  border: none;
+  padding: 10px;
+}
+.search__form .submit {
+  width: 10%;
+  background-color: #F4F9FF;
+  border: none;
+  padding: 10px;
+  border-radius: 0 26px 26px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
