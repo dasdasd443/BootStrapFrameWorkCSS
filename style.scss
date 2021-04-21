@@ -1,5 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -226,6 +227,7 @@
 }
 
 .search{
+    margin:3em 0;
     .popular-text-container{
         position:relative;
         .popular-text{
@@ -242,7 +244,7 @@
         align-items: center;
         display: flex;
         font-size:23px;
-        font-weight:bold;
+        font-weight:400;
         color:#B30733;
         text-transform: uppercase;
     }
@@ -280,6 +282,7 @@
         background: #EF4C00;
         padding:10px;
         border-radius: 50%;
+        color:white;
     }
     &__section{
         &--categories{
@@ -289,7 +292,7 @@
                 gap:1rem;
                 padding: 0;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: flex-start;
                 a{
                     text-decoration: none;
                     color:black;
@@ -314,7 +317,7 @@
         &--popular-items-container,&--items-container{
             .row{
                 gap:1rem;
-                margin: 0 1rem;
+                margin: 0 .1rem;
             }
         }
         &--items-container{
