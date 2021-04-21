@@ -124,12 +124,24 @@
         width:100%;
     }
     &__h1{
+        font-size:2.5vw;
         position: absolute;
         color: #FFFFFF;
         width:25%;
         height:100%;
         margin-top:-8em;
         margin-left:2em;
+    }
+    @media screen and(max-width:1400px) {
+        .apple-logo, .playstore-logo{
+            small:nth-child(1){
+                display:none;
+            }
+            small:nth-child(2){
+                font-size:1vw;
+            }
+            
+        }
     }
     &__div--logos{
         position: absolute;
@@ -153,7 +165,7 @@
                 border-radius: 50px;
             }
             &__small--1{
-                font-size:8px;
+                font-size:.5vw;
             }
         }
         .playstore-logo{
@@ -236,7 +248,14 @@
             &__ul{
                 display: flex;
                 gap:1rem;
-                padding: 0;
+                a{
+                    text-decoration: none;
+                    color:black;
+                }
+                a:hover{
+                    text-decoration: none;
+                    color:black;
+                }
                 li:nth-child(1){
                     background-color: #EF4C00;
                     color:white;
@@ -252,13 +271,10 @@
         }
         
         &--items-container{
-            display:flex;
-            gap:1em;
             &__article{
                 &--item{
-                    
                     height: 100%;
-                    width:32%;
+                    margin:1em;
                     display:flex;
                     flex-direction: column;
                     border:1px solid #2E476533;
@@ -266,7 +282,6 @@
                     .item-image-container{
                         position: relative;
                         i{
-                            
                             padding:10px;
                             color:white;
                             background: #FF0043;
@@ -340,10 +355,6 @@
                     }
                 }
             }
-        }
-        &--popular-items-container{
-            display:flex;
-            gap:1rem;
         }
     }
 }
