@@ -13,6 +13,16 @@
         align-items: flex-end;
     }
     .profile{
+        .line-container{
+            position: relative;
+            .line{
+                position: absolute;
+                width:1px;
+                height:12vh;
+                top:-2.7em;
+                border-left: 1px solid #cecece;
+            }
+        }
         display: flex;
         width:100%;
         margin-bottom:-.5em;
@@ -58,6 +68,18 @@
     justify-content: space-between;
     &__span{
         padding: 0 0 1px 25px;
+        a{
+            text-decoration: none;
+            color:#2E4765;
+        }
+        a:hover{
+            z-index: 10;
+            color:#2E4765;
+            border-bottom: .5em solid #EF4C00;
+            padding-bottom:1em;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
     }
 }
 .quote{
@@ -154,17 +176,34 @@
 }
 
 .search{
+    margin:5em;
+    .popular-text-container{
+        position:relative;
+        .popular-text{
+            position: absolute;
+            color:#B30733;
+            font-size:23px;
+            font-weight:bold;
+            margin-top:-1.5em;
+            background: white;
+            padding: 0 1em 0 0;
+        }
+    }
     .our-meals{
         font-size:23px;
         font-weight:bold;
         color:#B30733;
         text-transform: uppercase;
     }
+    &__div--search-form-container{
+        margin: 0 0 2em;
+    }
     &__form{
         display:flex;
         position: relative;
         justify-content: flex-end;
         height:50px;
+        
         .input--text{
             width: 90%;
             border-radius:26px 0 0 26px;
@@ -191,5 +230,118 @@
         background: orange;
         padding:10px;
         border-radius: 50%;
+    }
+    &__section{
+        &--categories{
+            &__ul{
+                display: flex;
+                gap:1rem;
+                padding: 0;
+                li:nth-child(1){
+                    background-color: #EF4C00;
+                    color:white;
+                }
+                li{
+                    background-color: #F4F9FF;
+                    border-radius: 23px;
+                    text-decoration: none;
+                    list-style-type: none;
+                    padding:5px 20px 5px 20px;
+                }
+            }
+        }
+        
+        &--items-container{
+            display:flex;
+            gap:1em;
+            &__article{
+                &--item{
+                    
+                    height: 100%;
+                    width:32%;
+                    display:flex;
+                    flex-direction: column;
+                    border:1px solid #2E476533;
+                    border-radius: 23px 23px 0 0;
+                    .item-image-container{
+                        position: relative;
+                        i{
+                            
+                            padding:10px;
+                            color:white;
+                            background: #FF0043;
+                            position: absolute;
+                            bottom:1em;
+                            left:1em;
+                            border-radius: 23px;
+                        }
+                    }
+                    img{
+                        border-radius: 23px 23px 0 0;
+                        width:100%;
+                        height:20vh;
+                        object-fit: cover;
+                    }
+                    &__text > *{
+                        padding:5px;
+                    }
+                    &__text{
+                        padding:1em;
+                        span{
+                            color:#B30733;
+                            font-size:17px;
+                            letter-spacing: 0px;
+                        }
+                        .item-name{
+                            display:flex;
+                            justify-content: space-between;
+                            svg{
+                                color:#FF0043;
+                            }
+                        }
+                        .review{
+                            display: flex;
+                            align-items: center;
+                            gap:1rem;
+                            svg{
+                                color:#EF4C00;
+                            }
+                            .text-review{
+                                display: flex;
+                                text-align: center;
+                                span{
+                                    color:#2E4765;
+                                    font-size:13px;
+                                }
+                            }
+                        }
+                        .footer{
+                            display:flex;
+                            justify-content: space-between;
+                            .category{
+                                display:flex;
+                                gap:1rem;
+                                span{
+                                    border-radius: 23px;
+                                    padding:.5em 2em;
+                                    font-size:11px;
+                                    color:#2E4765;
+                                    background: #2E47650D;
+                                }
+                            }
+                            .time{
+                                span{
+                                    color:#2E4765;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--popular-items-container{
+            display:flex;
+            gap:1rem;
+        }
     }
 }
