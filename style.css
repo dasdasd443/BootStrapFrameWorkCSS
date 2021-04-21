@@ -136,17 +136,10 @@
   margin-top: -8em;
   margin-left: 2em;
 }
-@media screen and (max-width: 1400px) {
-  .image .apple-logo small:nth-child(1), .image .playstore-logo small:nth-child(1) {
-    display: none;
-  }
-  .image .apple-logo small:nth-child(2), .image .playstore-logo small:nth-child(2) {
-    font-size: 1vw;
-  }
-}
 .image__div--logos {
   position: absolute;
-  margin: -7em 0 0 5em;
+  bottom: 1px;
+  margin-left: 5em;
   width: 25%;
   height: 25%;
   color: white;
@@ -243,9 +236,14 @@
   padding: 10px;
   border-radius: 50%;
 }
+.search__section--categories {
+  margin: 1em 0 4em 0;
+}
 .search__section--categories__ul {
   display: flex;
   gap: 1rem;
+  padding: 0;
+  flex-wrap: wrap;
 }
 .search__section--categories__ul a {
   text-decoration: none;
@@ -266,13 +264,17 @@
   list-style-type: none;
   padding: 5px 20px 5px 20px;
 }
+.search__section--popular-items-container .row, .search__section--items-container .row {
+  gap: 1rem;
+  margin: 0 1rem;
+}
 .search__section--items-container__article--item {
   height: 100%;
-  margin: 1em;
   display: flex;
   flex-direction: column;
   border: 1px solid #2E476533;
   border-radius: 23px 23px 0 0;
+  padding: 0 !important;
 }
 .search__section--items-container__article--item .item-image-container {
   position: relative;
@@ -347,6 +349,15 @@
 .search__section--items-container__article--item__text .footer .time span {
   color: #2E4765;
   font-size: 13px;
+}
+
+@media screen and (max-width: 1400px) {
+  .apple-logo small:nth-child(1), .playstore-logo small:nth-child(1) {
+    display: none;
+  }
+  .apple-logo small:nth-child(2), .playstore-logo small:nth-child(2) {
+    font-size: 1vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
