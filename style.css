@@ -329,8 +329,12 @@
   color: #2E4765;
   background: #2E47650D;
 }
+.search__section--items-container__article--item__text .footer .time {
+  font-size: 13px;
+}
 .search__section--items-container__article--item__text .footer .time span {
   color: #2E4765;
+  font-size: 13px;
 }
 .search__section--popular-items-container {
   display: flex;
