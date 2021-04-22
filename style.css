@@ -215,10 +215,10 @@
 .image__div--logos .apple-logo__small--2, .image__div--logos .playstore-logo__small--2 {
   font-size: 2.3vh;
 }
-.image__div--logos .apple-logo__img, .image__div--logos .playstore-logo__img {
+.image__div--logos .apple-logo__i, .image__div--logos .playstore-logo__i {
   max-width: 60%;
   max-height: 60%;
-  border-radius: 50px;
+  margin: 0 0 0.3em 0.2em;
 }
 .image__div--logos .apple-logo {
   background-color: #B30733;
