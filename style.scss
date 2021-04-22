@@ -90,11 +90,14 @@
         a{
             text-decoration: none;
             color:#2E4765;
+            position: relative;
         }
         a:hover{
+            content: "";
             z-index: 10;
+            display: inline;
             color:#2E4765;
-            border-bottom: .5em solid #EF4C00;
+            border-bottom: .35em solid #EF4C00;
             padding-bottom:1.2em;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
