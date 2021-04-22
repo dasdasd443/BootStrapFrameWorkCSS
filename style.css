@@ -127,6 +127,9 @@
   font-size: 70px;
   margin: 25px;
 }
+.quote__h1--quote-text {
+  text-align: center;
+}
 .quote__h1--quote-mark:nth-child(4) {
   position: relative;
   margin-bottom: -1em;
