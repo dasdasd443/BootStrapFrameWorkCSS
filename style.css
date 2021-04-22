@@ -277,9 +277,10 @@
   border-radius: 0 26px 26px 0;
 }
 .search .filter {
-  height: 50px;
+  width: 45px;
+  height: 46px;
   background: #EF4C00;
-  padding: 10px;
+  padding: 16px 0 0 12px;
   border-radius: 50%;
   color: white;
 }
