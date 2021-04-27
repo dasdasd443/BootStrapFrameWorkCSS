@@ -57,50 +57,50 @@
             }
         }
     }
-}
-.header__div--title{
-    color:#EF4C00;
-    text-align:left;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    opacity: 1;
-    font-size: 28px;
-    &__h1{
-        position: relative;
-        bottom: -0.3em;
+    &__div--title{
+        color:#EF4C00;
+        text-align:left;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        opacity: 1;
+        font-size: 28px;
+        &__h1{
+            position: relative;
+            bottom: -0.3em;
+        }
     }
-}
-.header__div--links{
+    &__div--links{
     
-    .hamburger{
-        display: none;
-    }
-    .links{
-        width:100%;
-        .row{
-            display: flex !important;
-            justify-content: flex-end;
-            .col{
-                text-align: center;
+        .hamburger{
+            display: none;
+        }
+        .links{
+            width:100%;
+            .row{
+                display: flex !important;
+                justify-content: flex-end;
+                .col{
+                    text-align: center;
+                }
             }
         }
-    }
-    &__span{
-        margin:0;
-        a{
-            text-decoration: none;
-            color:#2E4765;
-            position: relative;
-        }
-        a:hover{
-            content: "";
-            z-index: 10;
-            display: inline;
-            color:#2E4765;
-            border-bottom: .35em solid #EF4C00;
-            padding-bottom:1.2em;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+        &__span{
+            margin:0;
+            a{
+                text-decoration: none;
+                color:#2E4765;
+                position: relative;
+            }
+            a:hover{
+                content: "";
+                z-index: 10;
+                display: inline;
+                color:#2E4765;
+                border-bottom: .35em solid #EF4C00;
+                padding-bottom:1.2em;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
         }
     }
 }
@@ -373,6 +373,9 @@
                             display: flex;
                             align-items: center;
                             gap:1rem;
+                            .stars{
+                                position: relative;
+                            }
                             svg{
                                 color:#EF4C00;
                             }
