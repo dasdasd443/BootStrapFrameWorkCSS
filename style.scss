@@ -88,6 +88,7 @@
     &__span{
         margin:0;
         a{
+            font-size: 15px;
             text-decoration: none;
             color:#2E4765;
             position: relative;
@@ -97,10 +98,10 @@
             z-index: 10;
             display: inline;
             color:#2E4765;
-            border-bottom: .35em solid #EF4C00;
+            border-bottom: .20em solid #EF4C00;
             padding-bottom:1.2em;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
         }
     }
 }
